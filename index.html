@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo San Jose</title>
+    <link rel="stylesheet" href="Estilo.css">
+    <style>
+        #product-grid > div {
+            display: flex !important;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 15px;
+            box-sizing: border-box;
+        }
+
+        .product-image {
+            width: 100%;
+            height: 180px;
+            object-fit: contain;
+            background-color: #f9f9f9;
+            border-radius: 4px;
+            margin-bottom: 12px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="toolbar">
+        <input type="text" class="search-bar" id="search-input" placeholder="Buscar productos...">
+        <select class="filters" id="filter-select">
+            <option value="relevantes">Relevancia</option>
+            <option value="baratos">Más baratos primero</option>
+            <option value="caros">Más caros primero</option>
+            <option value="az">A - Z</option>
+        </select>
+    </div>
+
+    <header>
+        <h1>Catálogo Escolar San Jose</h1>
+    </header>
+
+    <div class="parent" id="product-grid">
+        <div>
+            <img class="product-image" src="https://www.oxfordlibreria.com.ar/media/catalog/product/cache/5a38f6614905178fa07804facc7b33a0/7/7/7792216050407-4_20230209120010.jpg" alt="Cuaderno Rayado A4">
+            <div class="product-title">Cuaderno Rayado A4 San Jose</div>
+            <div class="product-price">$4.500</div>
+            <button class="btn-comprar">Comprar</button>
+        </div>
+        <div>
+            <img class="product-image" src="https://libreriaoasis.com.ar/cdn/shop/products/14123-0_1024x1024.jpg?v=1579739768" alt="Lápiz Grafito HB">
+            <div class="product-title">Lápiz Grafito HB San Jose</div>
+            <div class="product-price">$800</div>
+            <button class="btn-comprar">Comprar</button>
+        </div>
+        <div>
+            <img class="product-image" src="https://libreriaoasis.com.ar/cdn/shop/products/005813907-400x400_1024x1024.jpg?v=1579739668" alt="Goma de Borrar">
+            <div class="product-title">Goma de Borrar San Jose</div>
+            <div class="product-price">$600</div>
+            <button class="btn-comprar">Comprar</button>
+        </div>
+        <div>
+            <img class="product-image" src="https://thumbs.dreamstime.com/b/regla-de-cm-suministros-escolares-herramienta-medici%C3%B3n-ilustraci%C3%B3n-vectorial-aislada-vector-aislado-color-naranja-171761623.jpg?w=992" alt="Regla 30cm">
+            <div class="product-title">Regla 30cm San Jose</div>
+            <div class="product-price">$1.200</div>
+            <button class="btn-comprar">Comprar</button>
+        </div>
+        <div>
+            <img class="product-image" src="https://thumbs.dreamstime.com/b/metal-de-los-sacapuntas-de-l%C3%A1piz-94473001.jpg?w=768" alt="Sacapuntas Metal">
+            <div class="product-title">Sacapuntas Metal San Jose</div>
+            <div class="product-price">$1.500</div>
+            <button class="btn-comprar">Comprar</button>
+        </div>
+        <div>
+            <img class="product-image" src="https://segalmayorista.com/wp-content/uploads/2025/12/081_10774.jpg" alt="Marcadores x12">
+            <div class="product-title">Marcadores x12 San Jose</div>
+            <div class="product-price">$5.800</div>
+            <button class="btn-comprar">Comprar</button>
+        </div>
+        <div>
+            <img class="product-image" src="https://www.libreriaascorti.com.ar/179-large_default/lapices-maped-color-peps-x24.jpg" alt="Lápices Color x24">
+            <div class="product-title">Lápices Color x24 San Jose</div>
+            <div class="product-price">$7.200</div>
+            <button class="btn-comprar">Comprar</button>
+        </div>
+        <div>
+            <img class="product-image" src="https://www.redmarketing.com.ar/wp-content/uploads/2025/01/Mochila-3-compartimentos.jpg" alt="Mochila Reforzada">
+            <div class="product-title">Mochila Reforzada San Jose</div>
+            <div class="product-price">$45.000</div>
+            <button class="btn-comprar">Comprar</button>
+        </div>
+        <div>
+            <img class="product-image" src="https://briganti.com.ar/cdn/shop/files/UMBI62156031-01_1500x.jpg?v=1718725561" alt="Cartuchera">
+            <div class="product-title">Cartuchera San Jose</div>
+            <div class="product-price">$8.500</div>
+            <button class="btn-comprar">Comprar</button>
+        </div>
+        <div>
+            <img class="product-image" src="https://thumbs.dreamstime.com/b/tijeras-peque%C3%B1a-tijera-de-acero-inoxidable-con-mangos-naranjas-30450.jpg?w=768" alt="Tijera Escolar">
+            <div class="product-title">Tijera Escolar San Jose</div>
+            <div class="product-price">$2.400</div>
+            <button class="btn-comprar">Comprar</button>
+        </div>
+        <div>
+            <img class="product-image" src="https://img.planetoffice.com.ar/images_prg/adhesivos/pritt/00004147-1377701430_gde.jpg" alt="Pegamento Barra">
+            <div class="product-title">Pegamento Barra San Jose</div>
+            <div class="product-price">$1.900</div>
+            <button class="btn-comprar">Comprar</button>
+        </div>
+        <div>
+            <img class="product-image" src="https://libreriaoasis.com.ar/cdn/shop/products/imax1_140_1024x1024.jpg?v=1531962333" alt="Compás Técnico">
+            <div class="product-title">Compás Técnico San Jose</div>
+            <div class="product-price">$4.100</div>
+            <button class="btn-comprar">Comprar</button>
+        </div>
+        <div>
+            <img class="product-image" src="https://acdn-us.mitiendanube.com/stores/001/421/947/products/fx-82la_x-bk_f1-3174666485346ff0d316128739627041-1024-1024.webp?_gl=1*pqxhwx*_gcl_au*NDc0MjUxNTgyLjE3ODE3ODg1MTUuNTY1NTQ1NTAyLjE3ODE3ODg1MTUuMTc4MTc4ODUxNQ..*_ga*MTU4NTcyMDA5LjE3ODE3ODg1MTU.*_ga_XTJDSS1ZQ4*czE3ODE3ODg1MTQkbzEkZzAkdDE3ODE3ODg1MTUkajU5JGwwJGgw" alt="Calculadora">
+            <div class="product-title">Calculadora San Jose</div>
+            <div class="product-price">$22.000</div>
+            <button class="btn-comprar">Comprar</button>
+        </div>
+        <div>
+            <img class="product-image" src="https://unipel.com.ar/39971-large_default/RESALTADOR_PELIKAN_TEXTMARKER_PASTEL_x4_BLISTER.jpg" alt="Resaltadores x4">
+            <div class="product-title">Resaltadores x4 San Jose</div>
+            <div class="product-price">$3.600</div>
+            <button class="btn-comprar">Comprar</button>
+        </div>
+        <div>
+            <img class="product-image" src="https://libreriaoasis.com.ar/cdn/shop/products/803-thickbox_1024x1024.jpg?v=1579740117" alt="Corrector">
+            <div class="product-title">Corrector San Jose</div>
+            <div class="product-price">$2.100</div>
+            <button class="btn-comprar">Comprar</button>
+        </div>
+        <div>
+            <img class="product-image" src="https://rotularte.com.ar/wp-content/uploads/block-anotador-hojas-obra-A4.jpg" alt="Block Hojas">
+            <div class="product-title">Block Hojas San Jose</div>
+            <div class="product-price">$9.200</div>
+            <button class="btn-comprar">Comprar</button>
+        </div>
+        <div>
+            <img class="product-image" src="https://oportunidades-vip.com.ar/wp-content/uploads/2025/07/Carpeta_Plastica_Numero_3_Acrilico_Transparente_3_Anillos_D_999819-MLA82270589295_022025-O.jpg" alt="Carpeta 3 Anillos">
+            <div class="product-title">Carpeta 3 Anillos San Jose</div>
+            <div class="product-price">$6.400</div>
+            <button class="btn-comprar">Comprar</button>
+        </div>
+        <div>
+            <img class="product-image" src="https://www.neotres.com/images/00000000370-010080890FOLIO-LIGGO-A4-X100-40-MIC.jpg" alt="Folios x100">
+            <div class="product-title">Folios x100 San Jose</div>
+            <div class="product-price">$5.300</div>
+            <button class="btn-comprar">Comprar</button>
+        </div>
+        <div>
+            <img class="product-image" src="https://papeleradelonce.com.ar/wp-content/uploads/2020/11/9279.jpg" alt="Diccionario">
+            <div class="product-title">Diccionario San Jose</div>
+            <div class="product-price">$14.000</div>
+            <button class="btn-comprar">Comprar</button>
+        </div>
+        <div>
+            <img class="product-image" src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcRjKKLDmPcC4sRWy-GuPhOkExQvRI3C20L6xBVjerWeX6EtXxuxQAIXZmLzjN3IIHyOwX1pOMIQK-LdPw7brn_FwglEjFVAow" alt="Campera Abrigo">
+            <div class="product-title">Campera Abrigo San Jose</div>
+            <div class="product-price">$38.500</div>
+            <button class="btn-comprar">Comprar</button>
+        </div>
+        <div>
+            <img class="product-image" src="https://acdn-us.mitiendanube.com/stores/001/827/081/products/whatsapp-image-2025-01-13-at-11-58-55-059e9af823571e836017367880037728-1024-1024.webp?_gl=1*xsczy*_gcl_au*MTAyOTMxNzcxMy4xNzgxNzg3MzIy" alt="Remera Algodón">
+            <div class="product-title">Remera Algodón San Jose</div>
+            <div class="product-price">$12.000</div>
+            <button class="btn-comprar">Comprar</button>
+        </div>
+    </div>
+
+<script>
+    const searchInput = document.getElementById('search-input');
+    const filterSelect = document.getElementById('filter-select');
+    const productGrid = document.getElementById('product-grid');
+
+    const originalProducts = Array.from(productGrid.children);
+
+    function getPrice(product) {
+        const priceText = product.querySelector('.product-price').textContent;
+        return parseFloat(priceText.replace('$', '').replace(/\./g, ''));
+    }
+
+    searchInput.addEventListener('input', function(e) {
+        const term = e.target.value.toLowerCase();
+        
+        originalProducts.forEach(product => {
+            const title = product.querySelector('.product-title').textContent.toLowerCase();
+            
+            if (title.includes(term)) {
+                product.style.setProperty('display', 'flex', 'important');
+            } else {
+                product.style.setProperty('display', 'none', 'important');
+            }
+        });
+    });
+
+    filterSelect.addEventListener('change', function(e) {
+        const value = e.target.value;
+        let productsArray = Array.from(productGrid.children);
+
+        if (value === 'relevantes') {
+            productsArray = [...originalProducts];
+        } else if (value === 'baratos') {
+            productsArray.sort((a, b) => getPrice(a) - getPrice(b));
+        } else if (value === 'caros') {
+            productsArray.sort((a, b) => getPrice(b) - getPrice(a));
+        } else if (value === 'az') {
+            productsArray.sort((a, b) => {
+                const titleA = a.querySelector('.product-title').textContent.toLowerCase();
+                const titleB = b.querySelector('.product-title').textContent.toLowerCase();
+                return titleA.localeCompare(titleB);
+            });
+        }
+
+        productGrid.innerHTML = '';
+        productsArray.forEach(product => productGrid.appendChild(product));
+    });
+</script>
+</body>
+</html>
